@@ -30,7 +30,7 @@ import AdminLayout from "layouts/Admin.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter  basename="/gitpages_practica">
     <Switch>
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
       <Redirect to="/admin/dashboard" />
